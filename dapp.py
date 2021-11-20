@@ -74,7 +74,7 @@ def main():
         transmissions = st.sidebar.selectbox('Transmission type', transmission_df)
         motors = st.sidebar.slider('Motor capacity', 0.5, 10.0, 1.8, 0.1)
         bodies = st.sidebar.selectbox('Body', body_df)
-        kms = st.sidebar.slider('Km', 0, 1000000, 0, 100)
+        kms = st.sidebar.slider('Km', 0, 500000, 0, 100)
 
         data = {'Brand': brands,
                 'Model': models,
