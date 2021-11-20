@@ -34,7 +34,7 @@ ipywidgets==7.6.5
 isort==4.3.21
 jedi==0.18.0
 Jinja2==3.0.3
-joblib @ file:///tmp/build/80754af9/joblib_1635411271373/work
+joblib
 jsonschema==4.2.1
 jupyter-client==7.0.6
 jupyter-core==4.9.1
@@ -48,24 +48,24 @@ matplotlib-inline==0.1.3
 mccabe==0.6.1
 mistune==0.8.4
 mkl-fft==1.3.1
-mkl-random @ file:///C:/ci/mkl_random_1626186184278/work
+mkl-random
 mkl-service==2.4.0
 nbclient==0.5.8
 nbconvert==6.3.0
 nbformat==5.1.3
 nest-asyncio==1.5.1
 notebook==6.4.5
-numexpr @ file:///C:/ci/numexpr_1618856738664/work
-numpy @ file:///C:/ci/numpy_and_numpy_base_1634106873763/work
-olefile @ file:///Users/ktietz/demo/mc3/conda-bld/olefile_1629805411829/work
-openpyxl @ file:///tmp/build/80754af9/openpyxl_1632777717936/work
+numexpr
+numpy
+olefile
+openpyxl
 packaging==21.2
-pandas @ file:///C:/ci/pandas_1635488579061/work
+pandas
 pandocfilters==1.5.0
 parso==0.8.2
 pickleshare==0.7.5
 Pillow==8.4.0
-plotly @ file:///tmp/build/80754af9/plotly_1626182254919/work
+plotly
 prometheus-client==0.12.0
 prompt-toolkit==3.0.22
 protobuf==3.19.1
@@ -78,23 +78,23 @@ pylint==2.5.3
 Pympler==0.9
 pyparsing==2.4.7
 pyrsistent==0.18.0
-python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+python-dateutil
 pytz==2021.3
 pytz-deprecation-shim==0.1.0.post0
 pywin32==302
 pywinpty==1.1.5
 pyzmq==22.3.0
 requests==2.26.0
-scikit-learn @ file:///C:/ci/scikit-learn_1635188126022/work
+scikit-learn
 scipy==1.7.2
 Send2Trash==1.8.0
 six==1.15.0
 smmap==5.0.0
 streamlit==1.2.0
-tenacity @ file:///C:/ci/tenacity_1632740845368/work
+tenacity
 terminado==0.12.1
 testpath==0.5.0
-threadpoolctl @ file:///Users/ktietz/demo/mc3/conda-bld/threadpoolctl_1629802263681/work
+threadpoolctl
 toml==0.10.1
 toolz==0.11.2
 tornado==6.1
