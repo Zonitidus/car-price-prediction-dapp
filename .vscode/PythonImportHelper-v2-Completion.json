@@ -1,0 +1,279 @@
+[
+    {
+        "label": "streamlit",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "streamlit",
+        "description": "streamlit",
+        "detail": "streamlit",
+        "documentation": {}
+    },
+    {
+        "label": "pickle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pickle",
+        "description": "pickle",
+        "detail": "pickle",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "CatBoostRegressor",
+        "importPath": "catboost",
+        "description": "catboost",
+        "isExtraImport": true,
+        "detail": "catboost",
+        "documentation": {}
+    },
+    {
+        "label": "predict",
+        "kind": 2,
+        "importPath": "api_rest",
+        "description": "api_rest",
+        "peekOfCode": "def predict(feats):\n    pass\ndef main():\n    st.title(\"¿Cuánto cuesta Mcqueen?\")\n    st.sidebar.header(\"Parámetros\")\n    brand_df = df['brand'].drop_duplicates()\n    color_df = df['color'].drop_duplicates()\n    combustion_df = df['comb_type'].drop_duplicates()\n    transmission_df = df['trans'].drop_duplicates()\n    body_df = df['body'].drop_duplicates()",
+        "detail": "api_rest",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "api_rest",
+        "description": "api_rest",
+        "peekOfCode": "def main():\n    st.title(\"¿Cuánto cuesta Mcqueen?\")\n    st.sidebar.header(\"Parámetros\")\n    brand_df = df['brand'].drop_duplicates()\n    color_df = df['color'].drop_duplicates()\n    combustion_df = df['comb_type'].drop_duplicates()\n    transmission_df = df['trans'].drop_duplicates()\n    body_df = df['body'].drop_duplicates()\n    def init_parameters():\n        brands = st.sidebar.selectbox('Brand', brand_df)",
+        "detail": "api_rest",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "api_rest",
+        "description": "api_rest",
+        "peekOfCode": "df = pd.read_csv('tucarro_dataset_final2.csv')\ndf.loc[df.comb_type.str.lower().str.contains(\"habrido\"), \"comb_type\"] = \"hibrido\"\ndf.loc[df.comb_type.str.lower().str.contains(\"diasel\"), \"comb_type\"] = \"diesel\"\ndf['brand'] = df['brand'].astype(\"category\")\ndf['model'] = df['model'].astype(\"category\")\ndf['color'] = df['color'].astype(\"category\")\ndf['comb_type'] = df['comb_type'].astype(\"category\")\ndf['trans'] = df['trans'].astype(\"category\")\ndf['body'] = df['body'].astype(\"category\")\ndf['price'] = df['price'].astype(\"float64\")",
+        "detail": "api_rest",
+        "documentation": {}
+    },
+    {
+        "label": "df['brand']",
+        "kind": 5,
+        "importPath": "api_rest",
+        "description": "api_rest",
+        "peekOfCode": "df['brand'] = df['brand'].astype(\"category\")\ndf['model'] = df['model'].astype(\"category\")\ndf['color'] = df['color'].astype(\"category\")\ndf['comb_type'] = df['comb_type'].astype(\"category\")\ndf['trans'] = df['trans'].astype(\"category\")\ndf['body'] = df['body'].astype(\"category\")\ndf['price'] = df['price'].astype(\"float64\")\nwith open('kitty_modern.pkl', 'rb') as cat_modern:\n    kitty_modern = pickle.load(cat_modern)\nwith open('kitty_old.pkl', 'rb') as cat_old:",
+        "detail": "api_rest",
+        "documentation": {}
+    },
+    {
+        "label": "df['model']",
+        "kind": 5,
+        "importPath": "api_rest",
+        "description": "api_rest",
+        "peekOfCode": "df['model'] = df['model'].astype(\"category\")\ndf['color'] = df['color'].astype(\"category\")\ndf['comb_type'] = df['comb_type'].astype(\"category\")\ndf['trans'] = df['trans'].astype(\"category\")\ndf['body'] = df['body'].astype(\"category\")\ndf['price'] = df['price'].astype(\"float64\")\nwith open('kitty_modern.pkl', 'rb') as cat_modern:\n    kitty_modern = pickle.load(cat_modern)\nwith open('kitty_old.pkl', 'rb') as cat_old:\n    kitty_old = pickle.load(cat_old)",
+        "detail": "api_rest",
+        "documentation": {}
+    },
+    {
+        "label": "df['color']",
+        "kind": 5,
+        "importPath": "api_rest",
+        "description": "api_rest",
+        "peekOfCode": "df['color'] = df['color'].astype(\"category\")\ndf['comb_type'] = df['comb_type'].astype(\"category\")\ndf['trans'] = df['trans'].astype(\"category\")\ndf['body'] = df['body'].astype(\"category\")\ndf['price'] = df['price'].astype(\"float64\")\nwith open('kitty_modern.pkl', 'rb') as cat_modern:\n    kitty_modern = pickle.load(cat_modern)\nwith open('kitty_old.pkl', 'rb') as cat_old:\n    kitty_old = pickle.load(cat_old)\ndef predict(feats):",
+        "detail": "api_rest",
+        "documentation": {}
+    },
+    {
+        "label": "df['comb_type']",
+        "kind": 5,
+        "importPath": "api_rest",
+        "description": "api_rest",
+        "peekOfCode": "df['comb_type'] = df['comb_type'].astype(\"category\")\ndf['trans'] = df['trans'].astype(\"category\")\ndf['body'] = df['body'].astype(\"category\")\ndf['price'] = df['price'].astype(\"float64\")\nwith open('kitty_modern.pkl', 'rb') as cat_modern:\n    kitty_modern = pickle.load(cat_modern)\nwith open('kitty_old.pkl', 'rb') as cat_old:\n    kitty_old = pickle.load(cat_old)\ndef predict(feats):\n    pass",
+        "detail": "api_rest",
+        "documentation": {}
+    },
+    {
+        "label": "df['trans']",
+        "kind": 5,
+        "importPath": "api_rest",
+        "description": "api_rest",
+        "peekOfCode": "df['trans'] = df['trans'].astype(\"category\")\ndf['body'] = df['body'].astype(\"category\")\ndf['price'] = df['price'].astype(\"float64\")\nwith open('kitty_modern.pkl', 'rb') as cat_modern:\n    kitty_modern = pickle.load(cat_modern)\nwith open('kitty_old.pkl', 'rb') as cat_old:\n    kitty_old = pickle.load(cat_old)\ndef predict(feats):\n    pass\ndef main():",
+        "detail": "api_rest",
+        "documentation": {}
+    },
+    {
+        "label": "df['body']",
+        "kind": 5,
+        "importPath": "api_rest",
+        "description": "api_rest",
+        "peekOfCode": "df['body'] = df['body'].astype(\"category\")\ndf['price'] = df['price'].astype(\"float64\")\nwith open('kitty_modern.pkl', 'rb') as cat_modern:\n    kitty_modern = pickle.load(cat_modern)\nwith open('kitty_old.pkl', 'rb') as cat_old:\n    kitty_old = pickle.load(cat_old)\ndef predict(feats):\n    pass\ndef main():\n    st.title(\"¿Cuánto cuesta Mcqueen?\")",
+        "detail": "api_rest",
+        "documentation": {}
+    },
+    {
+        "label": "df['price']",
+        "kind": 5,
+        "importPath": "api_rest",
+        "description": "api_rest",
+        "peekOfCode": "df['price'] = df['price'].astype(\"float64\")\nwith open('kitty_modern.pkl', 'rb') as cat_modern:\n    kitty_modern = pickle.load(cat_modern)\nwith open('kitty_old.pkl', 'rb') as cat_old:\n    kitty_old = pickle.load(cat_old)\ndef predict(feats):\n    pass\ndef main():\n    st.title(\"¿Cuánto cuesta Mcqueen?\")\n    st.sidebar.header(\"Parámetros\")",
+        "detail": "api_rest",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "model",
+        "description": "model",
+        "peekOfCode": "df = pd.read_csv('tucarro_dataset_final2.csv')\ndf.loc[df.comb_type.str.lower().str.contains(\"habrido\"), \"comb_type\"] = \"hibrido\"\ndf.loc[df.comb_type.str.lower().str.contains(\"diasel\"), \"comb_type\"] = \"diesel\"\nfor i in ['brand', 'model', 'color', 'comb_type', 'trans', 'body']:\n    df[i] = df[i].astype(\"category\")\n    print(df[i].cat.codes)\n    df[i] = df[i].cat.codes\ndf['price'] = df['price'].astype(\"float64\")\n\"\"\"\n#x is the model that doesn't have the price attribute",
+        "detail": "model",
+        "documentation": {}
+    },
+    {
+        "label": "df['price']",
+        "kind": 5,
+        "importPath": "model",
+        "description": "model",
+        "peekOfCode": "df['price'] = df['price'].astype(\"float64\")\n\"\"\"\n#x is the model that doesn't have the price attribute\n# y is the one that only contains the price\nx = df.drop(['price'], axis=1).values\ny = df['price'].values\n# Dataset has been divided into several datatest into diferent proportion validation is 15%, testing is 15%, and the training is 70%\nvalidation_ratio = 0.15\ntest_ratio = 0.15\ntrain_ratio = 1 - validation_ratio + test_ratio",
+        "detail": "model",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "model",
+        "description": "model",
+        "peekOfCode": "x = df.drop(['price'], axis=1).values\ny = df['price'].values\n# Dataset has been divided into several datatest into diferent proportion validation is 15%, testing is 15%, and the training is 70%\nvalidation_ratio = 0.15\ntest_ratio = 0.15\ntrain_ratio = 1 - validation_ratio + test_ratio\nx_train, x_test, y_train, y_test = train_test_split(x, y, test_size=test_ratio, random_state=43)\nx_train, x_val, y_train, y_val = train_test_split(x_train, y_train, test_size=validation_ratio, random_state=43)\npandas_train = pd.DataFrame(x_train)\nmodern_cars_x_train = pandas_train[pandas_train[2] >= 2000]",
+        "detail": "model",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "model",
+        "description": "model",
+        "peekOfCode": "y = df['price'].values\n# Dataset has been divided into several datatest into diferent proportion validation is 15%, testing is 15%, and the training is 70%\nvalidation_ratio = 0.15\ntest_ratio = 0.15\ntrain_ratio = 1 - validation_ratio + test_ratio\nx_train, x_test, y_train, y_test = train_test_split(x, y, test_size=test_ratio, random_state=43)\nx_train, x_val, y_train, y_val = train_test_split(x_train, y_train, test_size=validation_ratio, random_state=43)\npandas_train = pd.DataFrame(x_train)\nmodern_cars_x_train = pandas_train[pandas_train[2] >= 2000]\nmodern_cars_x_train = modern_cars_x_train.to_numpy()",
+        "detail": "model",
+        "documentation": {}
+    },
+    {
+        "label": "validation_ratio",
+        "kind": 5,
+        "importPath": "model",
+        "description": "model",
+        "peekOfCode": "validation_ratio = 0.15\ntest_ratio = 0.15\ntrain_ratio = 1 - validation_ratio + test_ratio\nx_train, x_test, y_train, y_test = train_test_split(x, y, test_size=test_ratio, random_state=43)\nx_train, x_val, y_train, y_val = train_test_split(x_train, y_train, test_size=validation_ratio, random_state=43)\npandas_train = pd.DataFrame(x_train)\nmodern_cars_x_train = pandas_train[pandas_train[2] >= 2000]\nmodern_cars_x_train = modern_cars_x_train.to_numpy()\nmodern_cars_y_train = pd.DataFrame(y_train).iloc[pandas_train[pandas_train[2] >= 2000].index, :]\nold_cars_x_train = pandas_train[pandas_train[2] < 2000]",
+        "detail": "model",
+        "documentation": {}
+    },
+    {
+        "label": "test_ratio",
+        "kind": 5,
+        "importPath": "model",
+        "description": "model",
+        "peekOfCode": "test_ratio = 0.15\ntrain_ratio = 1 - validation_ratio + test_ratio\nx_train, x_test, y_train, y_test = train_test_split(x, y, test_size=test_ratio, random_state=43)\nx_train, x_val, y_train, y_val = train_test_split(x_train, y_train, test_size=validation_ratio, random_state=43)\npandas_train = pd.DataFrame(x_train)\nmodern_cars_x_train = pandas_train[pandas_train[2] >= 2000]\nmodern_cars_x_train = modern_cars_x_train.to_numpy()\nmodern_cars_y_train = pd.DataFrame(y_train).iloc[pandas_train[pandas_train[2] >= 2000].index, :]\nold_cars_x_train = pandas_train[pandas_train[2] < 2000]\nold_cars_x_train = old_cars_x_train.to_numpy()",
+        "detail": "model",
+        "documentation": {}
+    },
+    {
+        "label": "train_ratio",
+        "kind": 5,
+        "importPath": "model",
+        "description": "model",
+        "peekOfCode": "train_ratio = 1 - validation_ratio + test_ratio\nx_train, x_test, y_train, y_test = train_test_split(x, y, test_size=test_ratio, random_state=43)\nx_train, x_val, y_train, y_val = train_test_split(x_train, y_train, test_size=validation_ratio, random_state=43)\npandas_train = pd.DataFrame(x_train)\nmodern_cars_x_train = pandas_train[pandas_train[2] >= 2000]\nmodern_cars_x_train = modern_cars_x_train.to_numpy()\nmodern_cars_y_train = pd.DataFrame(y_train).iloc[pandas_train[pandas_train[2] >= 2000].index, :]\nold_cars_x_train = pandas_train[pandas_train[2] < 2000]\nold_cars_x_train = old_cars_x_train.to_numpy()\nold_cars_y_train = pd.DataFrame(y_train).iloc[pandas_train[pandas_train[2] < 2000].index, :]",
+        "detail": "model",
+        "documentation": {}
+    },
+    {
+        "label": "pandas_train",
+        "kind": 5,
+        "importPath": "model",
+        "description": "model",
+        "peekOfCode": "pandas_train = pd.DataFrame(x_train)\nmodern_cars_x_train = pandas_train[pandas_train[2] >= 2000]\nmodern_cars_x_train = modern_cars_x_train.to_numpy()\nmodern_cars_y_train = pd.DataFrame(y_train).iloc[pandas_train[pandas_train[2] >= 2000].index, :]\nold_cars_x_train = pandas_train[pandas_train[2] < 2000]\nold_cars_x_train = old_cars_x_train.to_numpy()\nold_cars_y_train = pd.DataFrame(y_train).iloc[pandas_train[pandas_train[2] < 2000].index, :]\nkitty_modern = CatBoostRegressor(num_trees=1790, learning_rate=0.203, depth=6)\nkitty_modern.fit(modern_cars_x_train, modern_cars_y_train)\nkitty_old = CatBoostRegressor(num_trees=1790, learning_rate=0.203, depth=6)",
+        "detail": "model",
+        "documentation": {}
+    },
+    {
+        "label": "modern_cars_x_train",
+        "kind": 5,
+        "importPath": "model",
+        "description": "model",
+        "peekOfCode": "modern_cars_x_train = pandas_train[pandas_train[2] >= 2000]\nmodern_cars_x_train = modern_cars_x_train.to_numpy()\nmodern_cars_y_train = pd.DataFrame(y_train).iloc[pandas_train[pandas_train[2] >= 2000].index, :]\nold_cars_x_train = pandas_train[pandas_train[2] < 2000]\nold_cars_x_train = old_cars_x_train.to_numpy()\nold_cars_y_train = pd.DataFrame(y_train).iloc[pandas_train[pandas_train[2] < 2000].index, :]\nkitty_modern = CatBoostRegressor(num_trees=1790, learning_rate=0.203, depth=6)\nkitty_modern.fit(modern_cars_x_train, modern_cars_y_train)\nkitty_old = CatBoostRegressor(num_trees=1790, learning_rate=0.203, depth=6)\nkitty_old.fit(modern_cars_x_train, modern_cars_y_train)",
+        "detail": "model",
+        "documentation": {}
+    },
+    {
+        "label": "modern_cars_x_train",
+        "kind": 5,
+        "importPath": "model",
+        "description": "model",
+        "peekOfCode": "modern_cars_x_train = modern_cars_x_train.to_numpy()\nmodern_cars_y_train = pd.DataFrame(y_train).iloc[pandas_train[pandas_train[2] >= 2000].index, :]\nold_cars_x_train = pandas_train[pandas_train[2] < 2000]\nold_cars_x_train = old_cars_x_train.to_numpy()\nold_cars_y_train = pd.DataFrame(y_train).iloc[pandas_train[pandas_train[2] < 2000].index, :]\nkitty_modern = CatBoostRegressor(num_trees=1790, learning_rate=0.203, depth=6)\nkitty_modern.fit(modern_cars_x_train, modern_cars_y_train)\nkitty_old = CatBoostRegressor(num_trees=1790, learning_rate=0.203, depth=6)\nkitty_old.fit(modern_cars_x_train, modern_cars_y_train)\nwith open('kitty_modern.pkl', 'wb') as cat_modern:",
+        "detail": "model",
+        "documentation": {}
+    },
+    {
+        "label": "modern_cars_y_train",
+        "kind": 5,
+        "importPath": "model",
+        "description": "model",
+        "peekOfCode": "modern_cars_y_train = pd.DataFrame(y_train).iloc[pandas_train[pandas_train[2] >= 2000].index, :]\nold_cars_x_train = pandas_train[pandas_train[2] < 2000]\nold_cars_x_train = old_cars_x_train.to_numpy()\nold_cars_y_train = pd.DataFrame(y_train).iloc[pandas_train[pandas_train[2] < 2000].index, :]\nkitty_modern = CatBoostRegressor(num_trees=1790, learning_rate=0.203, depth=6)\nkitty_modern.fit(modern_cars_x_train, modern_cars_y_train)\nkitty_old = CatBoostRegressor(num_trees=1790, learning_rate=0.203, depth=6)\nkitty_old.fit(modern_cars_x_train, modern_cars_y_train)\nwith open('kitty_modern.pkl', 'wb') as cat_modern:\n    pickle.dump(kitty_modern, cat_modern)",
+        "detail": "model",
+        "documentation": {}
+    },
+    {
+        "label": "old_cars_x_train",
+        "kind": 5,
+        "importPath": "model",
+        "description": "model",
+        "peekOfCode": "old_cars_x_train = pandas_train[pandas_train[2] < 2000]\nold_cars_x_train = old_cars_x_train.to_numpy()\nold_cars_y_train = pd.DataFrame(y_train).iloc[pandas_train[pandas_train[2] < 2000].index, :]\nkitty_modern = CatBoostRegressor(num_trees=1790, learning_rate=0.203, depth=6)\nkitty_modern.fit(modern_cars_x_train, modern_cars_y_train)\nkitty_old = CatBoostRegressor(num_trees=1790, learning_rate=0.203, depth=6)\nkitty_old.fit(modern_cars_x_train, modern_cars_y_train)\nwith open('kitty_modern.pkl', 'wb') as cat_modern:\n    pickle.dump(kitty_modern, cat_modern)\nwith open('kitty_old.pkl', 'wb') as cat_old:",
+        "detail": "model",
+        "documentation": {}
+    },
+    {
+        "label": "old_cars_x_train",
+        "kind": 5,
+        "importPath": "model",
+        "description": "model",
+        "peekOfCode": "old_cars_x_train = old_cars_x_train.to_numpy()\nold_cars_y_train = pd.DataFrame(y_train).iloc[pandas_train[pandas_train[2] < 2000].index, :]\nkitty_modern = CatBoostRegressor(num_trees=1790, learning_rate=0.203, depth=6)\nkitty_modern.fit(modern_cars_x_train, modern_cars_y_train)\nkitty_old = CatBoostRegressor(num_trees=1790, learning_rate=0.203, depth=6)\nkitty_old.fit(modern_cars_x_train, modern_cars_y_train)\nwith open('kitty_modern.pkl', 'wb') as cat_modern:\n    pickle.dump(kitty_modern, cat_modern)\nwith open('kitty_old.pkl', 'wb') as cat_old:\n    pickle.dump(kitty_old, cat_old)",
+        "detail": "model",
+        "documentation": {}
+    },
+    {
+        "label": "old_cars_y_train",
+        "kind": 5,
+        "importPath": "model",
+        "description": "model",
+        "peekOfCode": "old_cars_y_train = pd.DataFrame(y_train).iloc[pandas_train[pandas_train[2] < 2000].index, :]\nkitty_modern = CatBoostRegressor(num_trees=1790, learning_rate=0.203, depth=6)\nkitty_modern.fit(modern_cars_x_train, modern_cars_y_train)\nkitty_old = CatBoostRegressor(num_trees=1790, learning_rate=0.203, depth=6)\nkitty_old.fit(modern_cars_x_train, modern_cars_y_train)\nwith open('kitty_modern.pkl', 'wb') as cat_modern:\n    pickle.dump(kitty_modern, cat_modern)\nwith open('kitty_old.pkl', 'wb') as cat_old:\n    pickle.dump(kitty_old, cat_old)\nwith open('modern_data.pkl', 'wb') as modern_data:",
+        "detail": "model",
+        "documentation": {}
+    },
+    {
+        "label": "kitty_modern",
+        "kind": 5,
+        "importPath": "model",
+        "description": "model",
+        "peekOfCode": "kitty_modern = CatBoostRegressor(num_trees=1790, learning_rate=0.203, depth=6)\nkitty_modern.fit(modern_cars_x_train, modern_cars_y_train)\nkitty_old = CatBoostRegressor(num_trees=1790, learning_rate=0.203, depth=6)\nkitty_old.fit(modern_cars_x_train, modern_cars_y_train)\nwith open('kitty_modern.pkl', 'wb') as cat_modern:\n    pickle.dump(kitty_modern, cat_modern)\nwith open('kitty_old.pkl', 'wb') as cat_old:\n    pickle.dump(kitty_old, cat_old)\nwith open('modern_data.pkl', 'wb') as modern_data:\n    pickle.dump(modern_cars_x_train, modern_data)",
+        "detail": "model",
+        "documentation": {}
+    },
+    {
+        "label": "kitty_old",
+        "kind": 5,
+        "importPath": "model",
+        "description": "model",
+        "peekOfCode": "kitty_old = CatBoostRegressor(num_trees=1790, learning_rate=0.203, depth=6)\nkitty_old.fit(modern_cars_x_train, modern_cars_y_train)\nwith open('kitty_modern.pkl', 'wb') as cat_modern:\n    pickle.dump(kitty_modern, cat_modern)\nwith open('kitty_old.pkl', 'wb') as cat_old:\n    pickle.dump(kitty_old, cat_old)\nwith open('modern_data.pkl', 'wb') as modern_data:\n    pickle.dump(modern_cars_x_train, modern_data)\nwith open('old_data.pkl', 'wb') as old_data:\n    pickle.dump(old_cars_x_train, old_data)",
+        "detail": "model",
+        "documentation": {}
+    }
+]
