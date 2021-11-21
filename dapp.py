@@ -97,7 +97,7 @@ def main():
         if df_st['Year'].to_numpy()[0] > 1999:
             st.success(predict_modern(df_st))
         else:
-            st.success(predict_old(df_st)[0])
+            st.success(predict_old(df_st))
 
 
 if __name__ == '__main__':
